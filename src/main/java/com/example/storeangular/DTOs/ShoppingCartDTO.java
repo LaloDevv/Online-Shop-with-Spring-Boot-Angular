@@ -10,7 +10,7 @@ public class ShoppingCartDTO {
     private BigDecimal price;
     private int quantity;
 
-    ShoppingCartDTO(ShoppingCart cart){
+    public ShoppingCartDTO(ShoppingCart cart){
         this.productName = cart.getProduct().getName();
         this.price = cart.getProduct().getPrice();
         this.image = cart.getProduct().getImage();
