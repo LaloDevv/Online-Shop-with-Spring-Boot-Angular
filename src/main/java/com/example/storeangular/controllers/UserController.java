@@ -20,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping(path = "/findById")
-    public Optional<User> getUserById(@RequestParam  Integer userID){
+    public Optional<User> getUserById(@RequestParam Integer userID){
         return userRepository.findById(userID);
     }
 }
